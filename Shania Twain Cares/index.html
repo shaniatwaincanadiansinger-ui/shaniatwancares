@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shania Twain Foundation | Empowering Youth & Communities</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: {
+                            900: '#0F261B',
+                            800: '#153324',
+                            700: '#1D4531',
+                        },
+                        gold: {
+                            500: '#D4AF37',
+                            600: '#B89728',
+                            400: '#E6C65C',
+                        },
+                        cream: '#F7F4EE',
+                        sand: '#EFECE6',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F7F4EE;
+            color: #1C1C1C;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(15, 38, 27, 0.92) 0%, rgba(29, 69, 49, 0.85) 100%), url('https://images.unsplash.com/photo-1543168257-4146039535eb?auto=format&fit=crop&q=80&w=2000') center/cover;
+        }
+    </style>
+</head>
+<body class="bg-cream text-stone-800 antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Notification Banner -->
+    <div class="bg-forest-900 text-gold-400 text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide flex flex-wrap items-center justify-center gap-2">
+        <i data-lucide="sparkles" class="w-4 h-4"></i>
+        <span>Open Grants & Investment Opportunities 2026 — Connect with Attorney Jeffrey via WhatsApp or Telegram (@Attorneyjeffreyarosen).</span>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex flex-col">
+                <span class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-forest-900">SHANIA TWAIN</span>
+                <span class="text-[10px] sm:text-xs tracking-[0.3em] text-gold-600 font-semibold uppercase -mt-1">Foundation</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-700">
+                <a href="#about" class="hover:text-gold-600 transition">About</a>
+                <a href="#quote" class="hover:text-gold-600 transition">Founder's Vision</a>
+                <a href="#opportunities" class="hover:text-gold-600 transition">Investment & Grants</a>
+                <a href="#donate" class="hover:text-gold-600 transition">Donate</a>
+                <a href="#contact" class="hover:text-gold-600 transition">Contact</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <a href="https://t.me/Attorneyjeffreyarosen" target="_blank" class="inline-flex items-center gap-1.5 bg-sky-600 hover:bg-sky-700 text-white px-3.5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition shadow-md">
+                    <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                    Telegram
+                </a>
+                <a href="https://wa.me/16576230841" target="_blank" class="inline-flex items-center gap-1.5 bg-emerald-700 hover:bg-emerald-800 text-white px-3.5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider transition shadow-md">
+                    <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-300"></i>
+                    WhatsApp
+                </a>
+                <a href="#donate" class="bg-gold-500 hover:bg-gold-600 text-forest-900 font-bold px-4 py-2.5 rounded-full text-xs uppercase tracking-wider transition shadow-md">
+                    Donate
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-forest-900 focus:outline-none p-2">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-stone-200 px-6 pt-4 pb-6 space-y-4">
+            <a href="#about" class="block text-stone-800 font-medium hover:text-gold-600">About</a>
+            <a href="#quote" class="block text-stone-800 font-medium hover:text-gold-600">Founder's Vision</a>
+            <a href="#opportunities" class="block text-stone-800 font-medium hover:text-gold-600">Investment & Grants</a>
+            <a href="#donate" class="block text-stone-800 font-medium hover:text-gold-600">Donate</a>
+            <a href="#contact" class="block text-stone-800 font-medium hover:text-gold-600">Contact</a>
+            <div class="pt-4 border-t border-stone-100 flex flex-col gap-3">
+                <a href="https://t.me/Attorneyjeffreyarosen" target="_blank" class="flex items-center justify-center gap-2 bg-sky-600 text-white px-4 py-3 rounded-xl text-sm font-semibold">
+                    <i data-lucide="send" class="w-4 h-4"></i> Telegram: @Attorneyjeffreyarosen
+                </a>
+                <a href="https://wa.me/16576230841" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-700 text-white px-4 py-3 rounded-xl text-sm font-semibold">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Attorney Jeffrey
+                </a>
+                <a href="#donate" class="flex items-center justify-center bg-gold-500 text-forest-900 font-bold px-4 py-3 rounded-xl text-sm">
+                    Donate Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-24 sm:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-4xl">
+            <div class="inline-flex items-center gap-2 bg-gold-500/20 border border-gold-500/40 px-4 py-1.5 rounded-full text-gold-400 text-xs sm:text-sm font-semibold tracking-widest uppercase mb-6 backdrop-blur-sm">
+                <i data-lucide="award" class="w-4 h-4 text-gold-400"></i>
+                Official Foundation Portal
+            </div>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                Lifting Kids Up With Love & Compassion
+            </h1>
+            <p class="text-stone-200 text-lg sm:text-xl font-light max-w-2xl mx-auto mb-10 leading-relaxed">
+                Empowering under-served children and youth to overcome disadvantages, discover their potential, and prosper through community partnerships and direct funding.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#opportunities" class="w-full sm:w-auto bg-gold-500 hover:bg-gold-600 text-forest-900 font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition shadow-xl flex items-center justify-center gap-2">
+                    <i data-lucide="briefcase" class="w-4 h-4"></i> Explore Investment & Grants
+                </a>
+                <a href="https://t.me/Attorneyjeffreyarosen" target="_blank" class="w-full sm:w-auto bg-sky-600 hover:bg-sky-700 text-white font-semibold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition backdrop-blur-md flex items-center justify-center gap-2 shadow-lg">
+                    <i data-lucide="send" class="w-4 h-4"></i> Contact via Telegram
+                </a>
+                <a href="https://wa.me/16576230841" target="_blank" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition backdrop-blur-md flex items-center justify-center gap-2">
+                    <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i> WhatsApp Application
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiring Quote Section -->
+    <section id="quote" class="py-24 bg-white relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-cream rounded-3xl p-8 sm:p-16 border border-stone-200 shadow-xl relative overflow-hidden">
+                <!-- Decorative Gold Quote Icon -->
+                <div class="absolute top-6 left-6 text-gold-500/20 pointer-events-none">
+                    <i data-lucide="quote" class="w-24 h-24 sm:w-32 sm:h-32"></i>
+                </div>
+
+                <div class="relative z-10 space-y-6 text-center sm:text-left">
+                    <div class="inline-block text-gold-600 font-semibold text-xs tracking-[0.2em] uppercase bg-gold-500/10 px-3 py-1 rounded-md">
+                        Founder's Personal Message
+                    </div>
+                    
+                    <blockquote class="font-serif text-xl sm:text-3xl text-forest-900 leading-relaxed italic space-y-4">
+                        <p>
+                            "I promised myself that some day I would help kids just like my younger self cope with their disadvantages and to prosper despite those challenges. The Shania Twain Foundation is the next step in my personal efforts to help as many under-served children and youth as I can."
+                        </p>
+                        <p class="text-lg sm:text-2xl text-stone-700 not-italic font-normal">
+                            "We will help them find their way in life by providing the support they need to grow into the incredible humans I know them to be. The foundation will provide our community partners funding for tools and resources to lift these kids up with love and compassion and put them on the right track for long term success."
+                        </p>
+                    </blockquote>
+
+                    <div class="pt-6 border-t border-stone-300/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <h3 class="font-serif text-2xl font-bold text-forest-900">Shania Twain</h3>
+                            <p class="text-xs uppercase tracking-widest text-gold-600 font-semibold">Founder & Visionary</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="inline-flex items-center gap-1.5 text-xs bg-emerald-100 text-emerald-800 px-3 py-1.5 rounded-full font-medium">
+                                <i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-600"></i> Active 2026 Initiative
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment & Opportunities Open Section -->
+    <section id="opportunities" class="py-24 bg-forest-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-gold-400 text-xs font-semibold uppercase tracking-[0.2em] bg-gold-500/10 px-3 py-1 rounded-md border border-gold-500/30">
+                    Opportunities Open Now
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold mt-4 mb-4">Investment & Community Funding</h2>
+                <p class="text-stone-300 text-base sm:text-lg">
+                    We invite community leaders, partners, and visionary investors to join hands with us. Explore our open funding tracks and application pathways below.
+                </p>
+            </div>
+
+            <!-- Opportunity Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <!-- Card 1 -->
+                <div class="bg-forest-800/80 border border-forest-700 rounded-2xl p-8 hover:border-gold-500/50 transition duration-300 flex flex-col justify-between group shadow-lg">
+                    <div>
+                        <div class="w-12 h-12 bg-gold-500/20 rounded-xl flex items-center justify-center text-gold-400 mb-6 group-hover:bg-gold-500 group-hover:text-forest-900 transition">
+                            <i data-lucide="hand-heart" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-gold-400 bg-gold-500/10 px-2.5 py-1 rounded">Open Grant</span>
+                        <h3 class="font-serif text-2xl font-bold mt-3 mb-3 text-white">Community Partner Funding</h3>
+                        <p class="text-stone-300 text-sm leading-relaxed mb-6">
+                            Providing local community organizations with critical funding for tools, educational resources, and compassionate support frameworks for youth.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="text-xs text-stone-400 mb-3 flex items-center gap-1.5">
+                            <i data-lucide="clock" class="w-3.5 h-3.5 text-gold-400"></i> Applications Open Year-Round
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="https://t.me/Attorneyjeffreyarosen" target="_blank" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-2 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5">
+                                <i data-lucide="send" class="w-3.5 h-3.5"></i> Telegram
+                            </a>
+                            <a href="https://wa.me/16576230841?text=Hello%20Attorney%20Jeffrey,%20I%20would%20like%20to%20apply%20for%20the%20Community%20Partner%20Funding%20grant." target="_blank" class="bg-gold-500 hover:bg-gold-600 text-forest-900 font-bold py-3 px-2 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5">
+                                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-forest-800/80 border border-forest-700 rounded-2xl p-8 hover:border-gold-500/50 transition duration-300 flex flex-col justify-between group shadow-lg">
+                    <div>
+                        <div class="w-12 h-12 bg-gold-500/20 rounded-xl flex items-center justify-center text-gold-400 mb-6 group-hover:bg-gold-500 group-hover:text-forest-900 transition">
+                            <i data-lucide="trending-up" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-gold-400 bg-gold-500/10 px-2.5 py-1 rounded">Investment Tier</span>
+                        <h3 class="font-serif text-2xl font-bold mt-3 mb-3 text-white">Investment With Me Program</h3>
+                        <p class="text-stone-300 text-sm leading-relaxed mb-6">
+                            Direct strategic investments in long-term youth empowerment projects, arts programs, and sustainable disadvantage-coping mentorship initiatives.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="text-xs text-stone-400 mb-3 flex items-center gap-1.5">
+                            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-gold-400"></i> Verified Legal & Financial Review
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="https://t.me/Attorneyjeffreyarosen" target="_blank" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-2 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5">
+                                <i data-lucide="send" class="w-3.5 h-3.5"></i> Telegram
+                            </a>
+                            <a href="https://wa.me/16576230841?text=Hello%20Attorney%20Jeffrey,%20I%20am%20interested%20in%20the%20Investment%20With%20Me%20program." target="_blank" class="bg-gold-500 hover:bg-gold-600 text-forest-900 font-bold py-3 px-2 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5">
+                                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-forest-800/80 border border-forest-700 rounded-2xl p-8 hover:border-gold-500/50 transition duration-300 flex flex-col justify-between group shadow-lg">
+                    <div>
+                        <div class="w-12 h-12 bg-gold-500/20 rounded-xl flex items-center justify-center text-gold-400 mb-6 group-hover:bg-gold-500 group-hover:text-forest-900 transition">
+                            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+                        </div>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-gold-400 bg-gold-500/10 px-2.5 py-1 rounded">Youth Fellowship</span>
+                        <h3 class="font-serif text-2xl font-bold mt-3 mb-3 text-white">Youth Prosperity Fellowship</h3>
+                        <p class="text-stone-300 text-sm leading-relaxed mb-6">
+                            Direct scholarships, career guidance, and coping skill workshops designed by Shania Twain and child development specialists.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="text-xs text-stone-400 mb-3 flex items-center gap-1.5">
+                            <i data-lucide="users" class="w-3.5 h-3.5 text-gold-400"></i> Limited Cohort Openings
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <a href="https://t.me/Attorneyjeffreyarosen" target="_blank" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-2 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5">
+                                <i data-lucide="send" class="w-3.5 h-3.5"></i> Telegram
+                            </a>
+                            <a href="https://wa.me/16576230841?text=Hello%20Attorney%20Jeffrey,%20I%20would%20like%20to%20apply%20for%20the%20Youth%20Prosperity%20Fellowship." target="_blank" class="bg-gold-500 hover:bg-gold-600 text-forest-900 font-bold py-3 px-2 rounded-xl text-xs uppercase tracking-wider transition flex items-center justify-center gap-1.5">
+                                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal Notice Box -->
+            <div class="bg-forest-800 border border-gold-500/30 rounded-2xl p-8 max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-6">
+                <div class="w-16 h-16 bg-emerald-600/30 rounded-full flex items-center justify-center text-gold-400 shrink-0">
+                    <i data-lucide="shield-alert" class="w-8 h-8"></i>
+                </div>
+                <div class="text-center sm:text-left flex-1">
+                    <h4 class="font-serif text-xl font-bold text-white mb-1">Official Legal Application Channels</h4>
+                    <p class="text-stone-300 text-sm mb-4">
+                        All grant applications, investment inquiries, and partnership agreements are processed securely through our legal counsel Attorney Jeffrey. Reach out via Telegram or WhatsApp.
+                    </p>
+                    <div class="flex flex-wrap items-center justify-center sm:justify-start gap-4">
+                        <a href="https://t.me/Attorneyjeffreyarosen" target="_blank" class="inline-flex items-center gap-2 text-sky-400 font-semibold hover:text-sky-300 transition text-sm bg-sky-950/40 px-3 py-1.5 rounded-lg border border-sky-800/50">
+                            <i data-lucide="send" class="w-4 h-4"></i> Telegram: @Attorneyjeffreyarosen
+                        </a>
+                        <a href="https://wa.me/16576230841" target="_blank" class="inline-flex items-center gap-2 text-emerald-400 font-semibold hover:text-emerald-300 transition text-sm bg-emerald-950/40 px-3 py-1.5 rounded-lg border border-emerald-800/50">
+                            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp: +1 (657) 623-0841
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+                <!-- Col 4: Attorney Jeffrey Contact -->
+                <div>
+                    <h4 class="text-white font-serif text-lg font-bold mb-4">Attorney Jeffrey Legal Counsel</h4>
+                    <p class="text-stone-400 text-sm mb-3">Direct channels for applications & investments:</p>
+                    <div class="space-y-2.5">
+                        <a href="https://t.me/Attorneyjeffreyarosen" target="_blank" class="flex items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white px-4 py-2.5 rounded-xl text-xs font-semibold transition shadow-md">
+                            <i data-lucide="send" class="w-4 h-4"></i>
+                            <span>Telegram: @Attorneyjeffreyarosen</span>
+                        </a>
+                        <a href="https://wa.me/16576230841" target="_blank" class="flex items-center gap-2 bg-emerald-700 hover:bg-emerald-600 text-white px-4 py-2.5 rounded-xl text-xs font-semibold transition shadow-md">
+                            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-300"></i>
+                            <span>WhatsApp: +1 (657) 623-0841</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-8 border-t border-forest-800 text-center text-xs text-stone-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>&copy; 2026 Shania Twain Foundation. All Rights Reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-stone-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-stone-400">Terms of Service</a>
+                    <a href="#" class="hover:text-stone-400">Legal Disclaimers</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Copy Share Link function
+        function copyShareLink() {
+            const input = document.getElementById('share-link-input');
+            input.value = window.location.href !== "about:blank" ? window.location.href : "https://shaniatwainfoundation.org";
+            input.select();
+            document.execCommand('copy');
+            const feedback = document.getElementById('copy-feedback');
+            feedback.classList.remove('hidden');
+            setTimeout(() => feedback.classList.add('hidden'), 3000);
+        }
+
+        // Donation frequency state
+        let currentFrequency = 'monthly';
+        function setDonationFrequency(freq) {
+            currentFrequency = freq;
+            const monthlyBtn = document.getElementById('monthly-btn');
+            const onetimeBtn = document.getElementById('onetime-btn');
+
+            if (freq === 'monthly') {
+                monthlyBtn.className = "px-6 py-2 rounded-full text-xs font-bold uppercase transition bg-forest-900 text-white shadow-sm";
+                onetimeBtn.className = "px-6 py-2 rounded-full text-xs font-bold uppercase transition text-stone-700 hover:text-stone-900";
+            } else {
+                onetimeBtn.className = "px-6 py-2 rounded-full text-xs font-bold uppercase transition bg-forest-900 text-white shadow-sm";
+                monthlyBtn.className = "px-6 py-2 rounded-full text-xs font-bold uppercase transition text-stone-700 hover:text-stone-900";
+            }
+        }
+
+        // Amount selection
+        let selectedAmountValue = 150;
+        function selectAmount(amount) {
+            selectedAmountValue = amount;
+            document.getElementById('custom-amount').value = amount;
+            
+            // Update styling of buttons
+            document.querySelectorAll('.donation-amt').forEach(btn => {
+                btn.className = "donation-amt bg-white border-2 border-stone-300 hover:border-gold-500 text-forest-900 font-bold py-4 rounded-2xl text-xl transition flex flex-col items-center justify-center gap-1 shadow-sm";
+            });
+            
+            const btnMap = { 50: 'amt-50', 150: 'amt-150', 500: 'amt-500', 1000: 'amt-1000' };
+            const activeBtn = document.getElementById(btnMap[amount]);
+            if(activeBtn) {
+                activeBtn.className = "donation-amt bg-white border-2 border-gold-500 text-forest-900 font-bold py-4 rounded-2xl text-xl transition flex flex-col items-center justify-center gap-1 shadow-md ring-2 ring-gold-500/20";
+            }
+        }
+
+        // Handle Donation Submit
+        function handleDonate() {
+            const customInput = document.getElementById('custom-amount').value;
+            const finalAmt = customInput || selectedAmountValue;
+            
+            const modalDesc = document.getElementById('modal-desc');
+            modalDesc.textContent = `Thank you for your ${currentFrequency} contribution of $${finalAmt}! Your gift will directly fund tools, resources, and compassionate support for disadvantaged youth.`;
+            
+            document.getElementById('success-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('success-modal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
